@@ -94,6 +94,9 @@ Table of Contents
    The author is not invested in the details here, anything
    approximating what's described here would probably be fine.
 
+   If useful, comments/issues/PRs are welcome at:
+   https://github.com/sftcd/errata/
+
 2.  Policy versus Implementation
 
    Some of the details below are provided via indirection, using the
@@ -103,9 +106,6 @@ Table of Contents
    content of RFCs remains with the community and is never given to the
    RPC or IETF LLC.  The RPC are expected to consult with the community
    as changes are considered.
-
-
-
 
 
 

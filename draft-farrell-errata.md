@@ -66,6 +66,8 @@ datatracker.
 The author is not invested in the details here, anything approximating what's
 described here would probably be fine.
 
+If useful, comments/issues/PRs are welcome at: https://github.com/sftcd/errata/
+
 # Policy versus Implementation
 
 Some of the details below are provided via indirection, using the {{RPCTBD}},
