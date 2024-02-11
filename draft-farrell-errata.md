@@ -30,6 +30,11 @@ author:
         email: stephen.farrell@cs.tcd.ie
 
 normative:
+    RPCTBD:
+        title: somewhere the RPC publish stuff
+        date: 2024
+        author:
+            org: RPC
 
 --- abstract
 
@@ -61,6 +66,20 @@ datatracker.
 The author is not invested in the details here, anything approximating what's
 described here would probably be fine.
 
+# Policy versus Implementation
+
+Some of the details below are provided via indirection, using the {{RPCTBD}},
+reference. In those cases, the intent is that the referenced documents are
+maintained by, and under the change control of, the RPC, but that those details
+MUST ensure that control over the content of RFCs remains with the community
+and is never given to the RPC or IETF LLC.  The RPC are expected to consult
+with the community as changes are considered.
+
+There is one exception - where user-provided input is allowed, then spam will
+follow. The RPC are empowered to delete obvious spam as soon as possible. The
+RPC should periodically (perhaps yearly) report to the RSAB on recent trends
+related to spam in this system.
+
 # The New System
 
 Once an RFC is published, then, on the datatracker web page for viewing that
@@ -81,9 +100,9 @@ By default, RFC authors and relevant WG chairs will recieve notification
 when new discussion threads are started.
 
 Comments can be labelled in various ways, by the original poster or by other
-users with additional privileges, e.g. authors, (former) WG chairs, ADs or IRSG members.
-The set of priviliges associated with this system are expected to change
-slowly over time and are documented at TBD.
+users with additional privileges, e.g. authors, (former) WG chairs, ADs or IRSG
+members.  The set of priviliges associated with this system are expected to
+change slowly over time and are documented at {{RPCTBD}}.
 
 One way to label a specific comment that contains a suggested change is as an
 erratum.
@@ -91,18 +110,18 @@ erratum.
 Comments labelled as errata can be upvoted or downvoted.  Voting power can vary
 depending on the user, with authors of the RFC in question, (former) WG chairs,
 ADs, etc having more voting power. The set of up/down voting rules are expected
-to change slowly over time and are documented at TBD.
+to change slowly over time and are documented at {{RPCTBD}}.
 
 Once a comment labelled as an erratum has sufficient upvotes, then it can be
-approved by a relevant approver. For the IETF stream any AD can mark a sufficiently
-upvogted erratum
-as approved. Two relevant WG chairs can also do so if there is a relevant WG
-that is still open or only closed within the previous five years.
-If an errata for an IETF stream RFC is erroneously approved then that can be reversed by an AD.
+approved by a relevant approver. For the IETF stream any AD can mark a
+sufficiently upvoted erratum as approved. Two relevant WG chairs can also do so
+if there is a relevant WG that is still open or only closed within the previous
+five years. If an errata for an IETF stream RFC is erroneously approved then
+that can be reversed by an AD.
 
-It must be possibly to automatically apply the change resulting from
-an erratum before it is approved. The required formatting may change
-over time and the current requirements are documented at TBD.
+It must be possibly to automatically apply the change resulting from an erratum
+before it is approved. The required formatting may change over time and the
+current requirements are documented at {{RPCTBD}}.
 
 Other streams will define other approval schemes.
 
@@ -112,20 +131,19 @@ to an approval.
 
 # Handing existing errata
 
-Some of the issues arising in migrating to the new system
-include:
+Some of the issues arising in migrating to the new system include:
 
-- Existing approved errata need to be imported into the new system so
-as to be displayed as if they had been approved. 
+- Existing approved errata need to be imported into the new system so as to be
+  displayed as if they had been approved. 
 
-- No action is required with respect to current, posted but unprocessed, errata.
-If any of those are really useful, they'll be remembered or re-discovered.  The
-expectation is that discussions using the new system will be started for some
-of these unprocessed errata and that that will prove to be an easier way to
-finally process the actually useful subset of those.
+- No action is required with respect to current, posted but unprocessed,
+  errata.  If any of those are really useful, they'll be remembered or
+re-discovered.  The expectation is that discussions using the new system will
+be started for some of these unprocessed errata and that that will prove to be
+an easier way to finally process the actually useful subset of those.
 
-The current errata system should remain available in read-only 
-mode so that editors revising RFCs can access e.g. relevant HDFU errata.
+The current errata system should remain available in read-only mode so that
+editors revising RFCs can access e.g. relevant HDFU errata.
 
 # IANA Considerations
 

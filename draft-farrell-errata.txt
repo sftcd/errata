@@ -61,14 +61,16 @@ Internet-Draft             Better Than Errata              February 2024
 Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
-   2.  The New System  . . . . . . . . . . . . . . . . . . . . . . .   2
-   3.  Handing existing errata . . . . . . . . . . . . . . . . . . .   3
-   4.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
-   5.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
-   6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   4
+   2.  Policy versus Implementation  . . . . . . . . . . . . . . . .   2
+   3.  The New System  . . . . . . . . . . . . . . . . . . . . . . .   3
+   4.  Handing existing errata . . . . . . . . . . . . . . . . . . .   4
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
+   6.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   7.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   4
+   8.  Normative References  . . . . . . . . . . . . . . . . . . . .   4
    Appendix A.  Change Log . . . . . . . . . . . . . . . . . . . . .   4
      A.1.  Draft-00 to -01 . . . . . . . . . . . . . . . . . . . . .   4
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   4
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   5
 
 1.  Introduction
 
@@ -92,17 +94,15 @@ Table of Contents
    The author is not invested in the details here, anything
    approximating what's described here would probably be fine.
 
-2.  The New System
+2.  Policy versus Implementation
 
-   Once an RFC is published, then, on the datatracker web page for
-   viewing that RFC, there will be a "comment/discuss" button that
-   allows readers with a datatracker account to submit comments on, or
-   questions about, that RFC.  Threaded discussions on comments can
-   follow, not unlike issue discussion on github.
-
-   Discussion threads for RFCs can be browsed/searched.
-
-
+   Some of the details below are provided via indirection, using the
+   [RPCTBD], reference.  In those cases, the intent is that the
+   referenced documents are maintained by, and under the change control
+   of, the RPC, but that those details MUST ensure that control over the
+   content of RFCs remains with the community and is never given to the
+   RPC or IETF LLC.  The RPC are expected to consult with the community
+   as changes are considered.
 
 
 
@@ -113,6 +113,21 @@ Farrell                  Expires 14 August 2024                 [Page 2]
 
 Internet-Draft             Better Than Errata              February 2024
 
+
+   There is one exception - where user-provided input is allowed, then
+   spam will follow.  The RPC are empowered to delete obvious spam as
+   soon as possible.  The RPC should periodically (perhaps yearly)
+   report to the RSAB on recent trends related to spam in this system.
+
+3.  The New System
+
+   Once an RFC is published, then, on the datatracker web page for
+   viewing that RFC, there will be a "comment/discuss" button that
+   allows readers with a datatracker account to submit comments on, or
+   questions about, that RFC.  Threaded discussions on comments can
+   follow, not unlike issue discussion on github.
+
+   Discussion threads for RFCs can be browsed/searched.
 
    Discussion threads are expected to be re-directed to an IETF mailing
    list as warranted.  Discussions can be closed if warranted, e.g. as
@@ -127,7 +142,7 @@ Internet-Draft             Better Than Errata              February 2024
    by other users with additional privileges, e.g. authors, (former) WG
    chairs, ADs or IRSG members.  The set of priviliges associated with
    this system are expected to change slowly over time and are
-   documented at TBD.
+   documented at [RPCTBD].
 
    One way to label a specific comment that contains a suggested change
    is as an erratum.
@@ -136,32 +151,17 @@ Internet-Draft             Better Than Errata              February 2024
    power can vary depending on the user, with authors of the RFC in
    question, (former) WG chairs, ADs, etc having more voting power.  The
    set of up/down voting rules are expected to change slowly over time
-   and are documented at TBD.
+   and are documented at [RPCTBD].
 
    Once a comment labelled as an erratum has sufficient upvotes, then it
    can be approved by a relevant approver.  For the IETF stream any AD
-   can mark a sufficiently upvogted erratum as approved.  Two relevant
-   WG chairs can also do so if there is a relevant WG that is still open
-   or only closed within the previous five years.  If an errata for an
-   IETF stream RFC is erroneously approved then that can be reversed by
-   an AD.
+   can mark a sufficiently upvoted erratum as approved.  Two relevant WG
+   chairs can also do so if there is a relevant WG that is still open or
+   only closed within the previous five years.  If an errata for an IETF
+   stream RFC is erroneously approved then that can be reversed by an
+   AD.
 
-   It must be possibly to automatically apply the change resulting from
-   an erratum before it is approved.  The required formatting may change
-   over time and the current requirements are documented at TBD.
 
-   Other streams will define other approval schemes.
-
-   The default HTML view of RFCs will be that with errata applied.  The
-   list of applied errata can be viewed via a button, as can any
-   conversation leading up to an approval.
-
-3.  Handing existing errata
-
-   Some of the issues arising in migrating to the new system include:
-
-   *  Existing approved errata need to be imported into the new system
-      so as to be displayed as if they had been approved.
 
 
 
@@ -169,6 +169,23 @@ Farrell                  Expires 14 August 2024                 [Page 3]
 
 Internet-Draft             Better Than Errata              February 2024
 
+
+   It must be possibly to automatically apply the change resulting from
+   an erratum before it is approved.  The required formatting may change
+   over time and the current requirements are documented at [RPCTBD].
+
+   Other streams will define other approval schemes.
+
+   The default HTML view of RFCs will be that with errata applied.  The
+   list of applied errata can be viewed via a button, as can any
+   conversation leading up to an approval.
+
+4.  Handing existing errata
+
+   Some of the issues arising in migrating to the new system include:
+
+   *  Existing approved errata need to be imported into the new system
+      so as to be displayed as if they had been approved.
 
    *  No action is required with respect to current, posted but
       unprocessed, errata.  If any of those are really useful, they'll
@@ -180,22 +197,34 @@ Internet-Draft             Better Than Errata              February 2024
    The current errata system should remain available in read-only mode
    so that editors revising RFCs can access e.g. relevant HDFU errata.
 
-4.  IANA Considerations
+5.  IANA Considerations
 
    This document makes no request of IANA.
 
-5.  Security Considerations
+6.  Security Considerations
 
    Spam comments and flamewars could distract and damage the reputation
    of the RFC series.
 
-6.  Acknowledgements
+7.  Acknowledgements
 
    TBD
+
+8.  Normative References
+
+   [RPCTBD]   RPC, "somewhere the RPC publish stuff", 2024.
 
 Appendix A.  Change Log
 
 A.1.  Draft-00 to -01
+
+
+
+
+Farrell                  Expires 14 August 2024                 [Page 4]
+
+Internet-Draft             Better Than Errata              February 2024
+
 
    *  TBD
 
@@ -221,4 +250,31 @@ Author's Address
 
 
 
-Farrell                  Expires 14 August 2024                 [Page 4]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Farrell                  Expires 14 August 2024                 [Page 5]
