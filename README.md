@@ -1,2 +1,3 @@
-# errata
-some idea for doing better than the current RFC errata processing stuff
+# Errata
+
+Some ideas for doing better than the current RFC errata processing stuff
