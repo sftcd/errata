@@ -1,7 +1,7 @@
 ---
 title: Something Better Than Errata
 abbrev: Better Than Errata
-docname: draft-farrell-errata-01
+docname: draft-farrell-errata-02
 date: 2024-12-18
 
 # stand_alone: true
@@ -176,7 +176,7 @@ the RFC series.
 
 # Acknowledgements
 
-Thanks to those on the rfc-interest list for discussion of this topic,
+Thanks to those on the RFC series WG list for discussion of this topic,
 in particular Brian Carpenter, for specific comments on the text.
 
 All bad ideas, errors and omissions of course remain the fault of the

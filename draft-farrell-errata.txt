@@ -9,7 +9,7 @@ Expires: 21 June 2025
 
 
                       Something Better Than Errata
-                        draft-farrell-errata-01
+                        draft-farrell-errata-02
 
 Abstract
 
@@ -205,7 +205,7 @@ Table of Contents
 
 7.  Acknowledgements
 
-   Thanks to those on the rfc-interest list for discussion of this
+   Thanks to those on the RFC series WG list for discussion of this
    topic, in particular Brian Carpenter, for specific comments on the
    text.
 
